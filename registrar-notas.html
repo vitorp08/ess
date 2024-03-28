@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registrar Notas</h1>
+        <nav>
+            <a href="index.html" class="button">Início</a>
+            <a href="resultados.html" class="button">Ver Resultados</a>
+        </nav>
+    </header>
+    <main>
+        <section id="notas">
+            <!-- Formulário para registrar as notas do Primeiro Bimestre -->
+            <h2>Primeiro Bimestre</h2>
+            <input type="number" id="nota1_1" placeholder="Nota 1">
+            <input type="number" id="nota1_2" placeholder="Nota 2">
+            <input type="number" id="nota1_3" placeholder="Nota 3">
+            <button onclick="registrarNotas(1)">Registrar Notas</button>
+            <p>Resultado: <span id="resultado1"></span></p>
+
+            <!-- Formulário para registrar as notas do Segundo Bimestre -->
+            <h2>Segundo Bimestre</h2>
+            <input type="number" id="nota2_1" placeholder="Nota 1">
+            <input type="number" id="nota2_2" placeholder="Nota 2">
+            <input type="number" id="nota2_3" placeholder="Nota 3">
+            <button onclick="registrarNotas(2)">Registrar Notas</button>
+            <p>Resultado: <span id="resultado2"></span></p>
+
+            <!-- Formulário para registrar as notas do Terceiro Bimestre -->
+            <h2>Terceiro Bimestre</h2>
+            <input type="number" id="nota3_1" placeholder="Nota 1">
+            <input type="number" id="nota3_2" placeholder="Nota 2">
+            <input type="number" id="nota3_3" placeholder="Nota 3">
+            <button onclick="registrarNotas(3)">Registrar Notas</button>
+            <p>Resultado: <span id="resultado3"></span></p>
+
+            <!-- Formulário para registrar as notas do Quarto Bimestre -->
+            <h2>Quarto Bimestre</h2>
+            <input type="number" id="nota4_1" placeholder="Nota 1">
+            <input type="number" id="nota4_2" placeholder="Nota 2">
+            <input type="number" id="nota4_3" placeholder="Nota 3">
+            <button onclick="registrarNotas(4)">Registrar Notas</button>
+            <p>Resultado: <span id="resultado4"></span></p>
+        </section>
+    </main>
+    <main>
+        <section id="notas">
+            <!-- Resultados das notas serão exibidos aqui -->
+        </section>
+        <button id="btnSomarNotas" onclick="somarNotas()">Somar Notas</button>
+        <p id="resultado"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
